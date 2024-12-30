@@ -11,4 +11,54 @@ body{
     background-color: rgb(244, 244, 244);
     margin:10px;
     overflow: visible;
+    display: flex;
+
+}
+
+/* Styling for the navigation bar container */
+.nav-container {
+    background-color: #333; /* Dark background */
+    padding: 10px 20px; /* Add some spacing */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Add a shadow */
+    display: flex;
+    z-index: 1000;
+    justify-content: center;
+    
+}
+
+/* Styling for the navigation items */
+.nav-items ul {
+    list-style-type: none; /* Remove bullets */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Align items horizontally */
+    justify-content: space-around; /* Distribute items evenly */
+    align-items: center; /* Center align items vertically */
+}
+
+/* Styling for individual navigation links */
+.nav-links a {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* White text color */
+    font-size: 18px; /* Increase font size */
+    padding: 10px 15px; /* Add padding around links */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for navigation links */
+.nav-links a:hover {
+    background-color: #555; /* Slightly lighter background */
+    border-radius: 5px; /* Rounded corners */
+    color: #ffd700; /* Highlight text color */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .nav-items ul {
+        flex-direction: column; /* Stack items vertically */
+    }
+    .nav-links a {
+        text-align: center; /* Center text */
+        padding: 12px 0; /* Adjust padding */
+    }
 }
