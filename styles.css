@@ -7,7 +7,57 @@ body{
     font-family: "Akrobat", sans-serif;
 }
 
-.hero-container {
+.hero-container{
+    height: 1000px;
+    width: auto;
+    background: #001429;
+}
+
+.hero-container img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.nav-container{
+    display: flex;
+    background: #001429;
+    flex-direction: column;
+    font-weight: 500;
+    color: white;   
+    padding: 10px 0px;
+    z-index: 1000;
+    overflow: inherit;
+}
+
+.nav-links{
+    display: flex;
+    color: white;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding-left: 76px;
+    list-style: none;
+    gap: 76px;
+
+}
+
+.nav-links li a {
+    text-decoration: none; 
+    color: white; 
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+    color: 01C8FE#01C8FE;
+}
+  /* .hero-container {
     background-color: rgba(255, 255, 255, 1);
     display: flex;
     flex-direction: column;
@@ -168,4 +218,4 @@ body{
       white-space: initial;
       padding: 0 20px;
     }
-  }
+  } */
